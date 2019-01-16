@@ -1,5 +1,17 @@
 # NBA
 
+# Prerequisite
+The only prerequisite to be able to run desktop regression tests is to have NodeJS installed. Currently, Node 6.x is required.
+Setup
+1.	Clone this repository to a new directory
+2.	run npm install to install all of the dependencies described in ./package.json
+# Executing tests
+Tests can be run locally 
+# Local execution
+To run locally, the base command is npm test. As can be seen in ./package.json, this is equivalent to running the wdio testrunner with the local config file (wdio.local.conf.js). You might want to specify a particular spec or suite file to run in addition to using this, which can be configured via the local config file or via command line. A list of suites is contained within the base config file (wdio.conf.js). See below for more examples of how to run tests locally.
+To do so via command line, you can use the command npm test -- --spec='./path/to/spec', or npm test -- --suite <suite> To run backend search tests via command line, you can use the command mocha "./request_tests/" --ui=tdd --timeout=6000
+Check the package.json file for full script running details. There are a couple of convenience commands created to execute tests only for a specific stream, ex. npm run test-buy to run a set of suites that pertain to the Buy team.
+
 ## Getting started on the mobile automation project?
 
 1.	**What should be installed?**
