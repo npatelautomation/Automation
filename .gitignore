@@ -1,0 +1,13 @@
+.idea/
+node_modules/
+*.log
+.DS_Store
+allure-results/
+allure-report/
+junit-results/
+errorShots/
+appArchived/
+package-lock.json
+.bash_profile.swp
+/wdio.local.conf.js
+app/
